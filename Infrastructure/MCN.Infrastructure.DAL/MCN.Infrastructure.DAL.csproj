@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\OnlineApp.Common\OnlineApp.Common.csproj" />
+    <ProjectReference Include="..\..\Core\OnlineApp.Core.Entities.Params\OnlineApp.Core.Entities.Params.csproj" />
+    <ProjectReference Include="..\..\Core\OnlineApp.Core.Entities\OnlineApp.Core.Entities.csproj" />
+    <ProjectReference Include="..\..\ServiceRep\OnlineApp.ServiceRep.DAL\OnlineApp.ServiceRep.DAL.csproj" />
+    <ProjectReference Include="..\..\ServiceRep\OnlineApp.ServiceRep.DataFacotory\OnlineApp.ServiceRep.DataFacotory.csproj" />
+    <ProjectReference Include="..\OnlineApp.Infrastructure.DataFacotory\OnlineApp.Infrastructure.DataFacotory.csproj" />
+  </ItemGroup>
+
+</Project>

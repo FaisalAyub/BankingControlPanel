@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UserRepositoryWrapper\**" />
+    <EmbeddedResource Remove="UserRepositoryWrapper\**" />
+    <EntityDeploy Remove="UserRepositoryWrapper\**" />
+    <None Remove="UserRepositoryWrapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.20" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\MCN.Common\MCN.Common.csproj" />
+    <ProjectReference Include="..\..\Core\MCN.Core.Entities.Params\MCN.Core.Entities.Params.csproj" />
+    <ProjectReference Include="..\..\Core\MCN.Core.Entities\MCN.Core.Entities.csproj" />
+    <ProjectReference Include="..\..\ServiceRep\MCN.ServiceRep.BAL\MCN.ServiceRep.BAL.csproj" />
+    <ProjectReference Include="..\SourceApp.Infrastructure.Logging\MCN.Infrastructure.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UserRepositoryBL\" />
+  </ItemGroup>
+
+</Project>

@@ -2,12 +2,20 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/CORE.API/v16/Server/sqlite3
-bin/Debug/netcoreapp3.0
-obj
-/.vs/CORE.API
-/Core.Application/bin/Debug/netstandard2.0
-/Core.Data/bin/Debug/netstandard2.0
-/Core.Utilities/bin/Debug/netstandard2.0
+[Dd]ebug
+[Dd]ebugPublic
+[Rr]elease
+[Rr]eleases
+x64
+x86
+bld
+[Bb]in
 bin
 obj
+[Oo]bj
+[Ll]og
+node_modules
+.vs
+*.csprojAssemblyReference.cache
+MCN.Database/MCN.Database.dbmdl
+MCN.Database/MCN.Database.jfm

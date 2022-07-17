@@ -1,0 +1,9 @@
+﻿
+
+
+
+Scaffold-DbContext "Server=iq.database.windows.net;Database=onlineapp;user=sa;password=User786;Trusted_Connection=True;"Microsoft.EntityFrameworkCore.SqlServer -OutputDir "ContextModel" -Context RepositoryContext
+
+Scaffold-DbContext "Server=SLOGIC;Database=onlineapp;user=sa;password=User786;Trusted_Connection=True;"Microsoft.EntityFrameworkCore.SqlServer -OutputDir "ContextModel" -Context RepositoryContext
+
+

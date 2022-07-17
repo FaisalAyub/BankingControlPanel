@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\MCN.Core.Entities.Params\MCN.Core.Entities.Params.csproj" />
+    <ProjectReference Include="..\..\Core\MCN.Core.Entities\MCN.Core.Entities.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\MCN.Infrastructure.BAL\MCN.Infrastructure.BAL.csproj" />
+    <ProjectReference Include="..\MCN.ServiceRep.BAL\MCN.ServiceRep.BAL.csproj" />
+  </ItemGroup>
+
+</Project>
