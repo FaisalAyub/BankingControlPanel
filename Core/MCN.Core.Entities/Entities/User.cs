@@ -15,16 +15,12 @@ namespace MCN.Core.Entities.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Gender { get; set; }
-        public Double Latitude { get; set; }
-        public Double Longitude { get; set; }
+        public string Phone { get; set; }
         public bool IsEmailVerified { get; set; }
         public bool? IsActive { get; set; }
-        public int LoginFailureCount { get; set; }
-        public DateTime? CreatedOn { get; set; }
-        public int? CreatedBy { get; set; }
-        public DateTime? UpdatedOn { get; set; }
-        public int? UpdatedBy { get; set; }
-        public int? UserLoginTypeId { get; set; } 
+        public int? UserLoginTypeId { get; set; }
+        public ICollection<Account> Accounts { get; set; }
+        public ICollection<Address> Address { get; set; }
     }
      
 }
